@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<script src = 'javascripts/jquery-3.5.1.min.js'></script>
-<script src = 'javascripts/jquery.first_plugin.js'></script>
-<script> $(document).ready(function () {
-    $('#firstdiv').firstPlugin
-    ({text: 111,
-        color: 'blue' })
-})
-</script>
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset='UTF-8'>
+    <title>jQuery plugin playground</title>
+    <script src = 'javascripts/jquery-3.5.1.min.js'></script>
+    <script src = 'javascripts/jquery.first_plugin.js'></script>
+    <script>
+        $(document).ready(function() {
+            $('#first-sample').firstPlugin({ text: 'Hi, krmsftd', color: '#faa' });
+            $('#second-sample').firstPlugin();
+        })
+    </script>
 </head>
 <body>
- <div id = 'firstdiv'>1</div>
+    <div id='first-sample'></div>
+    <div id='second-sample'></div>
 </body>
 </html>

@@ -1,11 +1,14 @@
-
-
 (function ($) {
 
-    jQuery.fn.firstPlugin = function (options) {
+    $.fn.firstPlugin = function(options) {
 
-        $(this).html(options.text);
-        $(this).css('color', options.color);
+        const settings = $.extend({
+            text: 'Hi, username',
+            color: '#000'
+        }, options);
+
+        $(this).html(settings.text);
+        $(this).css('color', settings.color);
+
     };
 })(jQuery);
-
